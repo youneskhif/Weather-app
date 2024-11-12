@@ -1,0 +1,94 @@
+/* Cool and Creative Weather Page Styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #333;
+}
+
+button {
+    background: #ff6b81;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff4757;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.sun-icon i, .cloud-icon i {
+    font-size: 50px;
+    margin-top: 15px;
+    animation: spin 2s linear infinite;
+    color: #ffde22;
+}
+
+.cloud-icon i {
+    color: #b0c4de;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
